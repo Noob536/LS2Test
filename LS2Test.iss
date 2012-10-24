@@ -235,7 +235,7 @@ objectdef TestRunner
 		
 		variable Noob_Timer timer
 		
-		osexecute compile ${This.Name} ${LavishScript.HomeDirectory}
+		osexecute compile ${This.Name}
 		timer:Set[5000]
 		while ${timer.IsRunning} && !${CompilingCompleted}
 			waitframe
